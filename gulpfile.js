@@ -9,7 +9,9 @@ gulp.task('sass', function () {
 
 gulp.task('inline-css', ['sass'], function () {
   return gulp.src('src/*.html')
-    .pipe($.inlineCss())
+    .pipe($.inlineCss({
+		preserveMediaQueries: true
+	}))
     .pipe(gulp.dest('dist/'));
 });
 
