@@ -1,0 +1,145 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+input:focus {
+  outline: none; }
+
+body {
+  background-color: #f3f5f7;
+  font-family: 'Open Sans', sans-serif; }
+
+.line1 {
+  height: 290px;
+  width: 100%;
+  background-color: #172b44;
+  padding-top: 60px;
+  box-sizing: border-box; }
+
+.content-wrapper {
+  padding: 0 20px; }
+
+.content {
+  width: 100%;
+  max-width: 640px;
+  height: 501px;
+  border-radius: 3px;
+  background-color: #ffffff;
+  box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.1);
+  margin: -155px auto 85px;
+  text-align: center;
+  box-sizing: border-box;
+  padding-top: 76px; }
+
+.content__img {
+  width: 202px;
+  height: 132px;
+  background-image: url("img/Coming_Soon_icon.svg");
+  background-repeat: no-repeat;
+  margin: 0 auto 30px; }
+
+.content__ttl {
+  font-size: 25px;
+  font-weight: 900;
+  line-height: 1;
+  text-align: center;
+  color: #172b44;
+  margin-bottom: 10px; }
+
+.content__txt {
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 1.73;
+  text-align: center;
+  color: #aeb3b8;
+  max-width: 442px;
+  margin: 0 auto 39px;
+  padding: 0 20px;
+  box-sizing: border-box; }
+
+.logo {
+  display: block;
+  margin: 0 auto;
+  width: 104px; }
+
+.logo img {
+  width: 104px; }
+
+.subm-form__input {
+  width: 240px;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.42);
+  font-family: Helvetica;
+  font-size: 14px;
+  line-height: 1.71;
+  text-align: left;
+  color: #646464;
+  margin-bottom: 32px; }
+
+.subm-form__btn {
+  width: 240px;
+  height: 50px;
+  border-radius: 3px;
+  background-color: #39b320;
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2);
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+  color: #ffffff;
+  border: none;
+  cursor: pointer; }
+
+.footer {
+  text-align: center; }
+
+.footer__logo {
+  display: block;
+  margin: 0 auto 10px;
+  width: 100px; }
+
+.footer__logo img {
+  width: 100px; }
+
+.footer__slogan {
+  font-size: 12px;
+  font-weight: 600;
+  text-align: center;
+  color: #1b1b1c;
+  margin-bottom: 35px; }
+
+.footer__impressum {
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 1.5;
+  text-align: center;
+  color: #172b44;
+  text-decoration: none; }

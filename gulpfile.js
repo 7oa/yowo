@@ -1,5 +1,7 @@
 var gulp = require('gulp');
 var $ = require('gulp-load-plugins')();
+var sass = require("gulp-sass");
+var dest_path = 'lp';
 
 gulp.task('sass', function () {
   return gulp.src('src/sass/**/*.sass')
@@ -28,6 +30,20 @@ gulp.task('images', ['clean-images'], function () {
     .pipe(gulp.dest('dist/img'));
 });
 
+gulp.task('scss', function() {
+    gulp.src('lp/style.scss')
+        .pipe( sass().on( 'error', function( error )
+            {
+                console.log( error );
+            } )
+        )
+        .pipe(sass({
+            // sourceComments: 'map'
+        }))
+        .pipe(sass().on('error', sass.logError))
+        .pipe(gulp.dest( dest_path ));
+});
+
 // http://www.mailgun.com/
 var emailOptions = {
   user: 'api:key-',
@@ -52,3 +68,4 @@ gulp.task('watch', function () {
 gulp.task('build', ['inline-css', 'images']);
 gulp.task('test', ['send-email']);
 gulp.task('default', ['watch']);
+gulp.task('default2', ['scss']);
