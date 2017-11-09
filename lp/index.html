@@ -8,44 +8,53 @@
     <title>Document</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/script.js"></script>
 </head>
 <body>
-    <div class="line1">
-        <a href="#" class="logo">
-            <img src="img/logo.png" alt="">
-        </a>
-    </div>
-    <div class="content-wrapper">
-        <div class="content">
-            <div class="content__img">
-
-            </div>
-            <div class="content__ttl">Coming Soon</div>
-            <div class="content__txt">
-                Schön, dass du dich für YourWork interessierst. Sei einer der ersten und profitiere davon.
-                Du bekommst in wenigen Sekunden eine Bestatigung auf:
-            </div>
-            <form action="" class="subm-form">
-                <div>
-                    <input type="email" class="subm-form__input" placeholder="E-Mail">
-                </div>
-                <div>
-                    <input type="submit" value="JETZT VORANMELDEN" class="subm-form__btn">
-                </div>
-            </form>
+    <div class="wrapper">
+        <div class="line1">
+            <a href="#" class="logo">
+                <img src="img/logo.png" alt="">
+            </a>
         </div>
-    </div>
+        <div class="content-wrapper">
+            <div class="content">
+                <div class="content__img">
 
-    <div class="footer">
-        <a href="#" class="footer__logo">
-            <img src="img/logo2.png" alt="">
-        </a>
-        <div class="footer__slogan">
-            It's not a job. It's YourWork.
+                </div>
+                <div class="content__ttl">Coming Soon</div>
+                <div class="content__txt">
+                    Schön, dass du dich für YourWork interessierst. Sei einer der ersten und profitiere davon.
+                    Du bekommst in wenigen Sekunden eine Bestatigung auf:
+                </div>
+                <form id="form" class="subm-form">
+                    <div>
+                        <input type="email" class="subm-form__input" placeholder="E-Mail" name="email" required="required">
+                    </div>
+                    <div>
+                        <input type="submit" value="JETZT VORANMELDEN" class="subm-form__btn">
+                    </div>
+                </form>
+
+                <div class="success" style="display: none">
+                    <div class="success__email"></div>
+                    <div class="success__icon"></div>
+                </div>
+            </div>
         </div>
-        <a href="impressum.html" class="footer__impressum" target="_blank">
-            Impressum
-        </a>
+
+        <div class="footer">
+            <a href="#" class="footer__logo">
+                <img src="img/logo2.png" alt="">
+            </a>
+            <div class="footer__slogan">
+                It's not a job. It's YourWork.
+            </div>
+            <a href="impressum.html" class="footer__impressum" target="_blank">
+                Impressum
+            </a>
+        </div>
     </div>
 </body>
 </html>

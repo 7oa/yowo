@@ -38,7 +38,7 @@ input:focus{
   outline: none;
 }
 
-body{
+.wrapper{
   background-color: #f3f5f7;
   font-family: 'Open Sans', sans-serif;
 }
@@ -104,7 +104,7 @@ body{
     width: 240px;
     border: none;
     border-bottom: 1px solid rgba(0, 0, 0, 0.42);
-    font-family: Helvetica;
+    font-family: Helvetica, 'Open Sans';
     font-size: 14px;
     line-height: 1.71;
     text-align: left;
@@ -127,6 +127,7 @@ body{
 }
 .footer{
   text-align: center;
+  padding-bottom: 40px;
   &__logo{
     display: block;
     margin: 0 auto 10px;
@@ -149,5 +150,74 @@ body{
     text-align: center;
     color: #172b44;
     text-decoration: none;
+  }
+}
+.success{
+  &__email{
+    font-family: Helvetica, 'Open Sans';
+    font-size: 14px;
+    line-height: 1.71;
+    text-align: center;
+    color: #1b1b1c;
+    margin-bottom: 40px;
+  }
+  &__icon{
+    background-image: url('img/email_checked.svg');
+    background-repeat: no-repeat;
+    display: block;
+    width: 57px;
+    height: 39px;
+    margin: 0 auto;
+  }
+}
+.imp-wrapper{
+  background-color: #ffffff;
+  font-family: 'Open Sans';
+}
+.imp-header{
+  height: 50px;
+  background-color: #172b44;
+  width: 100%;
+  padding-top: 16px;
+  box-sizing: border-box;
+  padding-left: 28px;
+  &__logo{
+    display: block;
+    background-image: url('img/logo.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 104px;
+    height: 28px;
+  }
+}
+.imp-body{
+  padding: 40px 30px;
+  &__ttl{
+    font-size: 24px;
+    text-align: left;
+    color: #646464;
+    margin-bottom: 20px;
+  }
+  &__txt{
+    max-width: 595px;
+    width: 100%;
+    font-size: 14px;
+    line-height: 1.57;
+    text-align: left;
+    color: #1b1b1c;
+    a{
+      color: #39b320;
+    }
+    strong{
+      font-weight: bold;
+    }
+  }
+}
+
+.imp-footer{
+  background-color: #f3f5f7;
+  padding-top: 40px;
+  .footer__slogan{
+    margin-bottom: 0;
   }
 }
