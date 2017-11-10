@@ -38,9 +38,20 @@ input:focus{
   outline: none;
 }
 
+html,
+body {
+  height: 100%;
+}
+
 .wrapper{
   background-color: #f3f5f7;
   font-family: 'Open Sans', sans-serif;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.cnt{
+  flex: 1 0 auto;
 }
 .line1{
   height: 290px;
@@ -128,6 +139,7 @@ input:focus{
 .footer{
   text-align: center;
   padding-bottom: 40px;
+  flex: 0 0 auto;
   &__logo{
     display: block;
     margin: 0 auto 10px;
@@ -173,6 +185,12 @@ input:focus{
 .imp-wrapper{
   background-color: #ffffff;
   font-family: 'Open Sans';
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.imp-content{
+  flex: 1 0 auto;
 }
 .imp-header{
   height: 50px;
