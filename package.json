@@ -4,7 +4,6 @@
   "author": "Nikolay Belikov",
   "license": "MIT",
   "dependencies": {
-    "gulp": "3.9.1",
     "gulp-clean": "0.3.2",
     "gulp-email": "0.0.7",
     "gulp-imagemin": "3.3.0",
